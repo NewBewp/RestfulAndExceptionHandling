@@ -5,14 +5,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "tbl_books")
-public class BookEntity extends EntityDefine {
+@Table(name = "tbl_roles")
+public class RoleEntity extends EntityDefine {
     @Column(nullable = false)
-    private String title;
+    private String name;
     @Column(nullable = false)
-    private String author;
+    private String description;
+
 }

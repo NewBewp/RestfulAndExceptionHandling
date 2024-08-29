@@ -1,4 +1,4 @@
-package com.example.RestfulAndExceptionHandling.dto;
+package com.example.RestfulAndExceptionHandling.dto.bookDTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
