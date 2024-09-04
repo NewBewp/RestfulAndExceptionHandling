@@ -3,14 +3,9 @@ package com.example.RestfulAndExceptionHandling.service;
 import java.util.List;
 
 public interface BaseService<I, D> {
-
-    D create(I entity);
-
-    D getById(int id);
-
-    D update(I entity);
-
-    void delete(int id);
-
+    D save(D dto);
+    D update(I id, D dto);
     List<D> getAll();
+    D findById(I id);
+    void delete(I id);
 }

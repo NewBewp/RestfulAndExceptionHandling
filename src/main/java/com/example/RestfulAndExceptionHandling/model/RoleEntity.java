@@ -1,5 +1,7 @@
 package com.example.RestfulAndExceptionHandling.model;
 
+import java.util.Collection;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,4 +18,6 @@ public class RoleEntity extends EntityDefine {
     @Column(nullable = false)
     private String description;
 
+    @OneToMany(mappedBy = "role")
+    private Collection<AccountEntity> accounts;
 }
